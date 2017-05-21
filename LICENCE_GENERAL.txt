@@ -1,0 +1,143 @@
+(Le français suit)
+
+-----------------------------------------------------------------------
+ Terms and conditions of use of Meteorological Data from Environment Canada
+(the "Data")
+-----------------------------------------------------------------------
+
+Version 1.1  October 2011
+
+Permission is hereby granted by Environment Canada (EC) to download and
+use the Data, subject to the terms and conditions set forth in this
+license agreement.
+
+1. Downloading and/or using the Data will indicate your acceptance to
+enter into a license agreement with Her Majesty the Queen in Right of
+Canada, acting through and as represented by the Minister of the
+Environment. If you do not wish to be bound by these terms and conditions,
+do not download or use the Data.
+
+2. EC is pleased to grant you a perpetual, royalty-free, non-exclusive and
+non-assignable license to use the Data subject to the terms and
+restrictions set forth herein. If you are acting on behalf of an
+organization, you represent to EC that you are duly authorized to act on
+behalf of this organization and that the organization hereby gives its
+assent to be bound to EC by the terms and conditions of this license
+agreement. As used herein, "you" and "your" refers to you and to any
+organization on behalf of which you are acting.
+
+3. You will have access to the Data as offered at the time of access of
+the said Data. EC has no obligation whatsoever to keep on providing
+services and/or upgrades of the Data.
+
+4. You are authorized to further distribute the Data under the following
+conditions. No fee will be charged explicitly for the Data redistributed
+to any third party, but you may charge for value-added services. You also
+have the right to create derivative work with the Data, but have the
+obligation, whether the Data is used AS IS or in a derivative work, to
+visually and clearly acknowledge EC as the source of the said Data. It
+must be easily identifiable for any individual given access to your
+services and/or products that the source of the Data is Environment
+Canada.
+
+5. Redistribution to a third party is permitted only if that third party
+has been informed by you of the terms and conditions of use of the Data
+and has agreed to said terms and conditions of use.
+
+6. No additional rights or licenses other than as provided for herein,
+whether expressed or implied, are granted herein by EC under or by virtue
+of this license agreement.
+
+7. EC does not warrant the quality, accuracy, or completeness of any of
+the Data downloaded and/or retrieved from any of its servers. Such Data
+are provided on an "AS IS" basis without warranty or condition of any
+nature. EC disclaims all other warranties, expressed or implied, including
+but not limited to implied warranties of merchantability and fitness for a
+particular purpose, with respect to the information retrieved under this
+license agreement, and any accompanying materials, if any.
+
+8. Furthermore, in no event shall Her Majesty, the Government of Canada,
+EC, or any of their officers, employees or agents be liable for any
+damages whatsoever in respect of any claim, action, demand or proceeding
+of any kind arising out or related to your use, inability to use or
+performance of the Data retrieved.
+
+9. This license and the rights granted hereunder will terminate
+automatically if you fail to comply with the terms herein and fail to cure
+such breach within 30 days of receiving written advice from EC.
+
+----------------------------------------
+
+-----------------------------------------------------------------------
+Termes et conditions d'utilisation des données météorologiques
+d'Environnement Canada (les "Données")
+-----------------------------------------------------------------------
+
+Version 1.1 Octobre 2011
+
+La permission vous est octroyée par Environnement Canada (EC) de
+télécharger et d'utiliser les Données, sous réserve des termes et
+conditions décrits aux présentes.
+
+1. Le téléchargement et/ou l'utilisation des Données témoignent de votre
+acceptation des conditions générales des droits d'utilisation établie avec
+Sa Majesté la Reine du Chef du Canada représentée aux présentes par le
+Ministre de l'Environnement. Si vous ne voulez pas vous soumettre aux
+conditions générales décrites ci-après, vous ne devez pas télécharger ou
+utiliser les Données.
+
+2. EC vous accorde une licence permanente, libre de redevances,
+non-exclusive et incessible vous permettant d'utiliser les Données, sous
+réserve des conditions décrites ci-dessous. Si vous agissez au nom d'une
+organisation, vous représentez à EC que vous êtes dûment autorisé à
+contracter au nom de cette organisation, et que ladite organisation a
+donné son assentiment à être liée à EC par les termes et conditions la
+présente entente de licence. Dans cette Entente, « vous » et « votre »
+réfère à vous et à toute organisation au nom de laquelle vous contractez
+pour les fins des présentes.
+
+3. Vous avez accès aux Données, dans le format et telles qu'elles sont
+offertes au moment où vous accédez à ces dernières. EC n'a aucune
+obligation de poursuivre la prestation des services et/ou la mise à niveau
+desdites Données.
+
+4. Vous êtes autorisé à redistribuer les Données seulement aux conditions
+suivantes. Aucun frais ne sera facturé expressément pour les Données
+redistribuées à une tierce partie, mais vous pouvez facturer des services
+à valeur ajoutée. Vous avez également le droit de créer un produit dérivé
+à l'aide des Données, mais vous avez l'obligation, que les Données soient
+utilisées TELLES QUELLES ou dans un produit dérivé, de reconnaître de
+façon visuelle et clairement Environnement Canada comme la source des
+Données. Il doit être aisé pour toute personne ayant accès à vos services
+ou produits de comprendre que la source des Données est Environnement
+Canada.
+
+5. La redistribution des Données à toute tierce partie est autorisée
+seulement lorsque vous informez cette tierce partie des conditions
+générales d'utilisation des Données et que l'accès aux Données
+redistribuées, de même que leur utilisation, signifient que cette tierce
+partie accepte lesdites conditions d'utilisation.
+
+6. Aucun droit ou licence additionnels autre que les droits mentionnés par
+la présente ne sont octroyés par EC ou en vertu de cette Entente.
+
+7. EC ne garantit pas la qualité, l'exactitude ni l'intégralité des
+Données ayant été téléchargées et/ou extraites de tous serveurs d'EC.
+Lesdites Données sont fournis « telles quelles », sans garantie ni
+condition de toute sorte. EC rejette toute autre garantie, expresse ou
+tacite, y compris, mais non de façon limitative, les garanties implicites
+de la qualité marchande ou de l'utilité aux fins d'un usage particulier
+des Données, et tout renseignement connexe téléchargés ou extraits sous la
+présente Entente.
+
+8. De plus, vous dégagez de toute responsabilité et renoncez à exercer
+toute poursuite, réclamation, action, recours ou procédure contre Sa
+Majesté, le gouvernement du Canada, EC, ainsi que tous leurs officiers,
+employés et agents pour tout dommage quel qu'il soit, pouvant résulter de
+votre utilisation ou incapacité d'utilisation des Données ou lier à la
+performance de celles-ci.
+
+9. Cette licence d'utilisation et les droits accordés en vertu des
+présentes seront automatiquement retirés si vous omettez de vous conformer
+aux conditions décrites aux présentes et vous n'y remédiez pas dans les 30
+jours suivant la réception d'un avis écrit de la part d'EC.
