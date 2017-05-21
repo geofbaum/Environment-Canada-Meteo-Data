@@ -1,0 +1,2 @@
+# Environment-Canada-Meteo-Data
+Some files to download the Hourly Meteorological Data that is stored on the Environment Canada (EC) server for free for 30 days. It offers the ability to have access to data that is not regularly needed by the general public but could be for Meteorologists or anyone who needs to more specific weather data then is available through the the regular EC Historical Data portal.
