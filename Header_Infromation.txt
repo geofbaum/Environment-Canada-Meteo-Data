@@ -1,0 +1,49 @@
+Header Name - Description of Header
+data_avail - Amount of Available Data in %
+max_batry_volt_pst1hr - Maximum battery voltage in the last hour
+min_batry_volt_pst1hr - Minimum battery voltage in the last hour
+hdr_fwd_pwr W 0 qa_summary unitless 100
+hdr_refltd_pwr W 0 qa_summary unitless 100
+hdr_suply_volt V 0 qa_summary unitless 100
+hdr_oscil_drft Hz 0 qa_summary unitless 100
+logr_panl_temp - Temperature inside of the datalogger in °C
+air_temp - Observed Air Temperature in °C
+rel_hum - Relative Humidity of the air in %
+avg_air_temp_pst1hr - Average Observed Air Temperature for the last hour in °C
+max_air_temp_pst1hr - Max Observed Air Temperature for the last hour in °C
+max_rel_hum_pst1hr - Max Observed Relative Humidity for the last hour in %
+min_air_temp_pst1hr - Min Observed Air Temperature for the last hour in °C
+min_rel_hum_pst1hr - Min Observed Relative Humidity for the last hour in %
+avg_wnd_spd_10m_mt50-60 - Average wind speed at 10m for the last 10 minutes of the hour in km/h
+avg_wnd_dir_10m_mt50-60 - Average wind direction at 10m for the last 10 minutes of the hour in °
+avg_wnd_spd_10m_pst1hr - Average wind speed at 10m for the past hour in km/h
+avg_wnd_dir_10m_pst1hr - Average wind direction at 10m for the past hour in °
+max_wnd_spd_10m_pst1hr - Max wind speed at 10m during the last hour in km/h
+max_wnd_spd_10m_pst1hr_tm - Time of the observation of the Max wind speed at 10m during the last hour in hhmm
+wnd_dir_10m_pst1hr_max_spd - Wind direction of the observed Max wind speed at 10m during the last hour in °
+max_wnd_spd_10m_mt50-60 - Max wind speed at 10m for the last 10 minutes of the hour in km/h
+wnd_dir_10m_mt50-60_max_spd - Direction of max wind speed at 10m for the last 10 minutes of the hour in °
+avg_wnd_spd_10m_mt58-60 - Average wind speed at 10m for the last 2 minutes of the hour in km/h
+avg_wnd_dir_10m_mt58-60 - Average wind direction at 10m for the last 2 minutes of the hour in °
+avg_wnd_spd_pcpn_gag_mt50-60 - Average wind speed at the height of the precipitation gage in km/h
+stn_pres - Observed Air Pressure in hPa
+avg_cum_pcpn_gag_wt_fltrd_mt55-60 - Average cumulative weight of the precipitation gage for the last 5 minutes of the hour in kg/m²
+pcpn_amt_pst1hr - Precipitation amount in the last hour in mm (Either rain or snow liquid water equivalent)
+snw_dpth - Snow depth in cm (Only snow)
+rnfl_amt_pst1hr - Rainfall amount for the past 1 hour in mm (Only Rain)
+tot_globl_solr_radn_pst1hr - Total Global Solar Radiance for the last 1 hour in kJ/m²
+dwpt_temp - Observed Dewpoint Temperature in °C
+pres_tend_char_pst3hrs - Code for the pressure tendency for the last 3 hours
+pres_tend_amt_pst3hrs - Air Pressure tendency for the past 3 hours in hPa
+min_air_temp_pst6hrs  - Min Observed Air Temperature for the last 6 hours in °C
+max_air_temp_pst6hrs  - Max Observed Air Temperature for the last 6 hours in °C
+min_air_temp_pst24hrs  - Min Observed Air Temperature for the last 24 hours in °C
+max_air_temp_pst24hrs  - Max Observed Air Temperature for the last 24 hours in °C
+pcpn_amt_pst3hrs - Precipitation amount in the last 3 hours in mm
+pcpn_amt_pst6hrs - Precipitation amount in the last 6 hours in mm
+pcpn_amt_pst24hrs - Precipitation amount in the last 24 hours in mm
+pcpn_snc_last_syno_hr - Amount of precipitation since last synoptic update in mm
+mslp - Mean Sea Level Pressure in hPa
+snw_dpth_2 cm - Snow depth at 2cm 
+snw_dpth_3 cm - Snow depth at 3cm
+snw_dpth_1 cm - Snow depth at 1cm
