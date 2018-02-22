@@ -8,12 +8,15 @@ itemlist = xmldoc.getElementsByTagName("identification-elements")[0].getElements
 itemlista = xmldoc.getElementsByTagName("elements")[0].getElementsByTagName("element")
 itemlist1 = xmldoc.getElementsByTagName("qualifier")
 
-outfile = open('data.txt','w')
-with open('data.csv', 'w', newline='') as result:
-    wr = csv.writer(result)
-    list_name = []  # name of data
-    list_uom = []   # unit of measure for that data
-    list_value = [] # the actual value
+# allow option to print to text file instead or in addition to the CSV file
+# outfile = open('data.txt','w')
+
+with open('data.csv', 'w', newline='') as result:   # You may want to change this every time you run it or make sure that you save
+    wr = csv.writer(result)                         # the data.csv file as another name after you have everything set up to your
+                                                    # liking.
+    list_name = []      # name of data                  
+    list_uom = []       # unit of measure for that data
+    list_value = []     # the actual observation data
 
     for element in itemlist:
         list_name.append(element.attributes['name'].value)
@@ -34,21 +37,24 @@ with open('data.csv', 'w', newline='') as result:
             list_value.append(element.attributes['value'].value)
     
     #
-    # Printing the list values to a text file if necessary. This can be commented out.
+    # Printing the list values to a text file if necessary. This is currently commented out.
     # Then writing the lists to a csv file to bring them into line
     # with the format of the Messages 11 file from Enviornment Canada.
     # If you are downloading the files at a regular pace this could save you a couple 
     # of hundered dollars down the line as you won't have to pay Environment Canada $100+
     # for more then one year of data from their archives in the same format CSV.
+    # Obviously this is not the exact same format as those CSV files and the data that you
+    # pay for may have gone through more data quality verification.
+    #
     # You will however have to remove the first rows of this file if you are combining
-    # multiple files into one as they are just repeated lines. The only list of value
-    # is the list_value as it's the one with the data in it.
+    # multiple files into one as that is the header line. The list called list_value
+    # is the one of importance as it's the one with the actual data in it. List
     #
     
-    print(list_1, list_a, list_b, file=outfile)
-    wr.writerow(list_1)
-    wr.writerow(list_a)
-    wr.writerow(list_b) 
+    print(list_name, list_uom, list_value) #, file=outfile)
+    wr.writerow(list_name)
+    wr.writerow(list_uom)
+    wr.writerow(list_value) 
     
-outfile.close()
+#outfile.close()
 result.close()
