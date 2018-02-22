@@ -11,11 +11,13 @@ use of that data. PLease see file LICENCE_GENERAL.txt for a copy of the current 
 at this link: http://dd.weather.gc.ca/doc/
 
 The two main files in this repository are for two seperate purposes but could easily be combined if need be. The one set of code is for
-downloading the data files from the EC server, while the other code is for translating the XML format and writing it to a text file.
-
-My likely next step is to configure it to write to a csv file and have all of the data write across one single row so that the data would
-be in a format similar to the files that you can download from EC as far as the standard meteorological data or that you can pay to 
-recieve if it is this higher level meteorological data.
+downloading the data files from the EC server, while the other code is for translating the XML format and writing it to a text file and now
+CSV like the one you would get from Environment Canada. The data is now in a format similar to their files though it does not necessarily
+go through the same verification process that could occur in addition to their basic quality assurance (QA) that is performed on the data 
+you can get through this process. If you need the possibility of higher QA is necessary you can still pay for their data though it is not 
+necessarily true that the data you recieve has gone through any better QA. Also for obvious reasons, you the user must verify 
+the data and do any additional QA that you see fit or is neccessary. This is raw data and should not be used for any legal proceedings and 
+is not admissible in court. If you require something along those lines you'll have to pay Environment Canada for it.
 
 For information regarding what the different header names represent please see the file Header_Information.txt that is available in this
 repo.
