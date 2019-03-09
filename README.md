@@ -24,3 +24,10 @@ repo.
 
 Current format (minus the '-' marks) of the data is as such for the meteorological data:
 Header name - Unit of Measurement - Value - QA Summary (if available) - QA Unit of Measure (it is unitless) - QA Value
+
+
+<h4>Due to a planned update coming for the operational data I will be working to update this repostiory to make sure any new information is
+  accounted for and that these scripts still work. As of March 8, 2019, the downloading and parsing of the data in the new format should still 
+  be accurate, however the location of the data in the output files may change, the header/column names being passed may be changed, data may 
+  no longer be in the new format, or additional data is likely to be present. I will do my best to go through and make note of these changes 
+  for anyone who might be using these for their own use. Cheers!</h4>
