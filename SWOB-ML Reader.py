@@ -40,11 +40,12 @@ with open('data.csv', 'w', newline='') as result:   # You may want to change thi
     # Printing the list values to a text file if necessary. This is currently commented out.
     # Then writing the lists to a csv file to bring them into line
     # with the format of the Messages 11 file from Enviornment Canada.
-    # If you are downloading the files at a regular pace this could save you a couple 
-    # of hundered dollars down the line as you won't have to pay Environment Canada $100+
-    # for more then one year of data from their archives in the same format CSV.
-    # Obviously this is not the exact same format as those CSV files and the data that you
-    # pay for may have gone through more data quality verification.
+    # If you are downloading the files at a regular pace this could save you some money 
+    # however if you require data that has been more throughly checked for QA or need the
+    # data to be signed off on from Environment Canada for legal use do not expect this
+    # to replace the Messages 11 files entirely. This will get you close to what you would
+    # pay to revceive but there are obvious differences in the two datasets. Also as of 2018,
+    # the price and service from EC has improved dramatically from even a few years prior.
     #
     # You will however have to remove the first rows of this file if you are combining
     # multiple files into one as that is the header line. The list called list_value
