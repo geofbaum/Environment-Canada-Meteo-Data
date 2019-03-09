@@ -1,3 +1,4 @@
+FIELD DATA IN REFERENCE TO FORMAT USED OPERATIONALLY BEFORE THE PLANNED CHANGE ON APRIL 1, 2019
 Header Name - Description of Header
 data_avail - Amount of Available Data in %
 max_batry_volt_pst1hr - Maximum battery voltage in the last hour
