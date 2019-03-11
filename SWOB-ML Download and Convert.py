@@ -160,7 +160,7 @@ date_list = [today - datetime.timedelta(days=x) for x in range(1, 8)] # This wil
                                                                       # download data once a week so obviously this could be changed to go back a longer or shorter
                                                                       # amount of time to check for and download the files.
 i = 0
-month = "\\Mars 2019\\"
+month = "\\Mars 2019\\"      # Example of Month Folder I only need to change this once every month
 stations = ['CWIT',       # Ste-Clotilde, QC
             'CYUL',       # Montreal/Trudeau International
             'CWTQ',       # MONTREAL/PIERRE ELLIOTT TRUDEAU INTL -- Has Hourly and 1-min data
@@ -169,14 +169,16 @@ stations = ['CWIT',       # Ste-Clotilde, QC
             'CWIZ']       # L'Acadie -- Has Hourly and 1-min data
 
 
-main_dir = "C:\\Users\\geoffrey\\Downloads\\Donnes Meteo\\"
+main_dir = "C:\\Path\\To\\Directory\\That\\Holds\\Station\\And\\Date\\Folders\\"
 
 create_fldrs(month, stations, main_dir)
 
 for station in stations:
     for date in date_list:
         directory = main_dir+station+month+date.strftime('%Y%m%d')+"\\"
-        #print(directory)
+        # Call routine to download data
         download_meteo(date.strftime('%Y%m%d'),station,directory)
+	# Call routine to convert xml files to txt files
         convert_toTxt(directory)
+	# Call routine to convert and merge xml files to csv file
         convert_toCSV(directory,date.strftime('%Y%m%d'))
