@@ -34,7 +34,9 @@ http://climate.weather.gc.ca/new_price_announce_e.html
 Also for obvious reasons, you the user must verify the data and do any additional QA that you see fit or is neccessary for your
 purposes. This is raw data and should not be used for any legal proceedings and is not admissible in court.
 <br>
+<br>
 Discussion of purpose of each of the main three files:
+<br>
 <br>
 <b>SWOB-ML Downloader Simple.py</b>
 - Downloads all the available XML files for one specific station for one day. Both of which are hardcoded into these examples
