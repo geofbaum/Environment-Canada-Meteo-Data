@@ -4,28 +4,69 @@ It offers the ability to have access to data that is not regularly needed by the
 or anyone who needs to more specific weather data then is available through the the regular EC Historical Data portal. The script 
 that is written to read in the data files is specific to the XML format used for the SWOB-ML files. A User Guide in PDF format is 
 available in both English and French from the following link as well as other pertinent information:
+<br>
+<br>
 http://dd.weather.gc.ca/observations/doc/
-
+<br>
+<br>
 Please also remember that by downloading and using the data provided by EC you are entering into an agreement with EC regarding the 
 use of that data. PLease see file LICENCE_GENERAL.txt for a copy of the current data licence file that is stored on the EC server
-at this link: http://dd.weather.gc.ca/doc/
+at this link: 
+<br>
+<br>
+http://dd.weather.gc.ca/doc/
+<br>
+<br>
+There are three main files in this repository, two of which labeled with Simple at the end of the filename are the original basic
+versions of the code that I created to download, and translate/parse the XML files to text and CSV files. The third file is an updated
+set of code that combines the main parts of the previous two while adding some additional features which I'll try to detail below.
+In each case of creating the text or CSV file the output will be similar to the CSV file (Messages 11) that can be purchased from
+Environment Canada of the archived historical data. The data is now in a format similar to their files though it does not necessarily
+go through the same verification process that occurs in addition to their basic quality assurance (QA) that is performed on the data 
+you can get through this process. If you need the higher level of QA, want data that is processed or analaysed further or need data that 
+can be used in legal proceedings you will need to purchase the data from Environment Canada. Here is a link the current pricing for
+the climate data.
+<br>
+<br>
+http://climate.weather.gc.ca/new_price_announce_e.html
+<br>
+<br>
+Also for obvious reasons, you the user must verify the data and do any additional QA that you see fit or is neccessary for your
+purposes. This is raw data and should not be used for any legal proceedings and is not admissible in court.
+<br>
+Discussion of purpose of each of the main three files:
+<br>
+<b>SWOB-ML Downloader Simple.py</b>
+- Downloads all the available XML files for one specific station for one day. Both of which are hardcoded into these examples
+<br>
 
-The two main files in this repository are for two seperate purposes but could easily be combined if need be. The one set of code is for
-downloading the data files from the EC server, while the other code is for translating the XML format and writing it to a text file and now
-CSV like the one you would get from Environment Canada. The data is now in a format similar to their files though it does not necessarily
-go through the same verification process that could occur in addition to their basic quality assurance (QA) that is performed on the data 
-you can get through this process. If you need the possibility of higher QA is necessary you can still pay for their data though it is not 
-necessarily true that the data you recieve has gone through any better QA. Also for obvious reasons, you the user must verify 
-the data and do any additional QA that you see fit or is neccessary. This is raw data and should not be used for any legal proceedings and 
-is not admissible in court. If you require something along those lines you'll have to pay Environment Canada for it.
+<b>SWOB-ML Reader Simple.py</b>
+- Converts the XML files to a single CSV file
+- In this example it would be a CSV file for the single day of data that was downloaded previously.
 
+<br>
+<b>SWOB-ML Download and Convert.py</b>
+
+- User has the option to hardcode a list of the station IDs that they want to download data from.
+- A list of dates is created starting from the day before the current one and going back seven days.
+- Using the list of dates and list of stations, the first function checks to see if folders are present on the local drive for the data
+  and if they are not, they are created.
+- The next function that is called is a modified version of the code from the Downloader Simple file. Data is downloaded for each 
+  station and day if it hasn't already been downloaded.
+- The third and fourth functions are modified versions of the code from the Reader Simple file. With the third function, a text file 
+  is created for each XML file present in the folder. This is not necessary if you just want the combined data in CSV format. The fourth
+  function is the code that combines the data from the XML files into a CSV formatted file. Unlike the original Reader code, there is no
+  header being written to the file for the data.
+<br>
+
+<br>
 For information regarding what the different header names represent please see the file Header_Information.txt that is available in this
 repo.
-
+<br>
 Current format (minus the '-' marks) of the data is as such for the meteorological data:
 Header name - Unit of Measurement - Value - QA Summary (if available) - QA Unit of Measure (it is unitless) - QA Value
-
-
+<br>
+<br>
 <h4>Due to a planned update coming for the operational data I will be working to update this repostiory to make sure any new information is
   accounted for and that these scripts still work. As of March 8, 2019, the downloading and parsing of the data in the new format should still 
   be accurate, however the location of the data in the output files may change, the header/column names being passed may be changed, data may 
