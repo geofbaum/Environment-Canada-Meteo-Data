@@ -63,10 +63,16 @@ Discussion of purpose of each of the main three files:
 
 <br>
 For information regarding what the different header names represent please see the file Header_Information.txt that is available in this
-repo.
+repo. There is also a pdf available detailing the differences between the older format and the new header format. This will give you
+an idea of what was added or what was changed with the newer version of the data. Most of the changes are simply naming differences and
+location in the file. However, there are also around 16 new values present in the file in addition to data flags for some of the data
+that were present previously. In total with new data and data flags there are nearly 30 additional values present. Please take the time
+to look at the pdf to see the changes and how they might affect your previous datasets. I will be updating the Header Information text
+file with the new headers shortly and will keep a copy of the old version here for at least the forseeable future in case users of the
+older data need to look up the older format. <br>
 <br>
-Current format (minus the '-' marks) of the data is as such for the meteorological data:
-Header name - Unit of Measurement - Value - QA Summary (if available) - QA Unit of Measure (it is unitless) - QA Value
+Current format (minus the '-' marks) of the data is as such for the meteorological data:<br>
+Header name - Unit of Measurement - Value - QA Summary (if available) - QA Unit of Measure (it is unitless) - QA Value<br>
 <br>
 <br>
 <h4>Due to a planned update coming for the operational data I will be working to update this repostiory to make sure any new information is
