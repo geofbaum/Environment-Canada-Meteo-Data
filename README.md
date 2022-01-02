@@ -80,3 +80,6 @@ Header name - Unit of Measurement - Value - QA Summary (if available) - QA Unit 
   be accurate, however the location of the data in the output files may change, the header/column names being passed may be changed, data may 
   no longer be in the new format, or additional data is likely to be present. I will do my best to go through and make note of these changes 
   for anyone who might be using these for their own use. Cheers!</h4>
+  
+<b>Please note this repository is out of date. I will hopefully have time to update this in the near future but I am not sure of exactly that maybe.
+  If you use this operationally or for personal use please let me know by opening an issue and I'll see if I can expedite the update process.</b>
