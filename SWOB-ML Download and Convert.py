@@ -57,8 +57,8 @@ def download_meteo(date, station, path):
 def convert_toTxt(directory):
     #
     # Script to convert all of the xml files in folder into text files.
-	# Creates a text file for every xml file that is present in the folder.
-	# Not necessary to do this if you just want the daily csv.
+    # Creates a text file for every xml file that is present in the folder.
+    # Not necessary to do this if you just want the daily csv.
     #
 
     directory = directory
@@ -124,9 +124,9 @@ def create_fldrs(month, stations, main_dir):
     main_dir = main_dir
     for station in stations:
         for date in date_list:
-            path_dir = main_dir+station+"\\"                            # path to folder for each station
-            path_month = main_dir+station+month                         # path to folder for each month within each stations folder
-            path = main_dir+station+month+date.strftime('%Y%m%d')+"\\"  # path to folder for each date in the date list within each month folder and station folder
+            path_dir = main_dir+"\\"+station+"\\"                            # path to folder for each station
+            path_month = main_dir+"\\"+station+month                         # path to folder for each month within each stations folder
+            path = main_dir+"\\"+station+month+date.strftime('%Y%m%d')+"\\"  # path to folder for each date in the date list within each month folder and station folder
             my_file = Path(path)
             if my_file.exists():
                 # file exists
@@ -136,12 +136,24 @@ def create_fldrs(month, stations, main_dir):
                 print("File or Directory Doesn't Exist, we should then create it...")
                 # Check to see if Station Directory Exists, if it does not create it
                 if not os.path.exists(path_dir):
+                    print('station directory does not exist.', path_dir)
                     os.mkdir(path_dir)
                     # Check to see if Month directory exists, if it doesn't create it
                     if not os.path.exists(path_month):
+                        print('month directory does not exist.',path_month)
+                        os.mkdir(path_month)
+                    else:
+                        print(path_month)
+                        continue
+                else:
+                    if not os.path.exists(path_month):
+                        print('month directory does not exist.',path_month)
                         os.mkdir(path_month)
                     else:
                         continue
+
+                    print(path_dir)
+                    continue
                 
                 # After checking to see if the station and month directories are there
                 # It should then be safe to create the directory related to the date  
@@ -155,12 +167,13 @@ def create_fldrs(month, stations, main_dir):
 
 #sets the variable "today" as the datetime object.
 today = datetime.datetime.today()
-date_list = [today - datetime.timedelta(days=x) for x in range(1, 8)] # This will create a list of dates from yesterday to seven days ex. if today was Jan 8th,
+date_list = [today - datetime.timedelta(days=x) for x in range(0, 1)] # This will create a list of dates from yesterday to seven days ex. if today was Jan 8th,
                                                                       # the list would be of Jan 7th to Jan 1st. I chose a list of 7 days because I normally
                                                                       # download data once a week so obviously this could be changed to go back a longer or shorter
                                                                       # amount of time to check for and download the files.
 i = 0
-month = "\\Mars 2019\\"      # Example of Month Folder I only need to change this once every month
+
+month = "\\"+today.strftime('%b_%Y')+"\\"      # Example of Month Folder I only need to change this once every month
 stations = ['CWIT',       # Ste-Clotilde, QC
             'CYUL',       # Montreal/Trudeau International
             'CWTQ',       # MONTREAL/PIERRE ELLIOTT TRUDEAU INTL -- Has Hourly and 1-min data
@@ -169,16 +182,18 @@ stations = ['CWIT',       # Ste-Clotilde, QC
             'CWIZ']       # L'Acadie -- Has Hourly and 1-min data
 
 
-main_dir = "C:\\Path\\To\\Directory\\That\\Holds\\Station\\And\\Date\\Folders\\"
+main_dir = r"C:\Path\To\Directory\That\Holds\Station\And\Date\Folders"
 
 create_fldrs(month, stations, main_dir)
 
 for station in stations:
     for date in date_list:
-        directory = main_dir+station+month+date.strftime('%Y%m%d')+"\\"
+        directory = main_dir+"\\"+station+month+date.strftime('%Y%m%d')+"\\"
+        if not os.path.exists(directory):
+            os.mkdir(directory)
         # Call routine to download data
         download_meteo(date.strftime('%Y%m%d'),station,directory)
-	# Call routine to convert xml files to txt files
+    # Call routine to convert xml files to txt files
         convert_toTxt(directory)
-	# Call routine to convert and merge xml files to csv file
+    # Call routine to convert and merge xml files to csv file
         convert_toCSV(directory,date.strftime('%Y%m%d'))

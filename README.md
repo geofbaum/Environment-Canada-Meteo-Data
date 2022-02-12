@@ -1,4 +1,10 @@
 # Environment-Canada-Meteo-Data
+<b> As of Feb 12, 2022 I've had the time to verify that the scripts in this repository still work with the current Enviornment Canada
+data repository for the SWOB-ML weather data. There have been some changes from the last time this repository had any major change. 
+This is regarding many of the sites that were hard coded in the scripts as examples as many used to provide only hourly data but now
+provide data at minute intervals as well as the hourly intervals. Other changes might have occurred that I've not had time to verify.
+I will continue to provide updates over the coming months.</b>
+
 Some files to download the Hourly Meteorological Data that is stored on the Environment Canada (EC) server for free for 30 days. 
 It offers the ability to have access to data that is not regularly needed by the general public but could be for Meteorologists 
 or anyone who needs to more specific weather data then is available through the the regular EC Historical Data portal. The script 
@@ -74,12 +80,3 @@ older data need to look up the older format. <br>
 Current format (minus the '-' marks) of the data is as such for the meteorological data:<br>
 Header name - Unit of Measurement - Value - QA Summary (if available) - QA Unit of Measure (it is unitless) - QA Value<br>
 <br>
-<br>
-<h4>Due to a planned update coming for the operational data I will be working to update this repostiory to make sure any new information is
-  accounted for and that these scripts still work. As of March 8, 2019, the downloading and parsing of the data in the new format should still 
-  be accurate, however the location of the data in the output files may change, the header/column names being passed may be changed, data may 
-  no longer be in the new format, or additional data is likely to be present. I will do my best to go through and make note of these changes 
-  for anyone who might be using these for their own use. Cheers!</h4>
-  
-<b>Please note this repository is out of date. I will hopefully have time to update this in the near future but I am not sure of exactly that maybe.
-  If you use this operationally or for personal use please let me know by opening an issue and I'll see if I can expedite the update process.</b>
